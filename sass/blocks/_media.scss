@@ -1,0 +1,309 @@
+@media (max-width: 1440px) {
+    .side-panel {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        .container {
+            grid-template-columns: 400px 520px;
+            column-gap: 50px;
+        }
+    }
+    .skills {
+        .skills__wrapper {
+            grid-template: repeat(2,270px)/repeat(2,270px);
+            justify-content: center;
+            gap: 100px;
+        }
+        .skills__progress {
+            grid-template: repeat(2,70px)/repeat(2,350px);
+            justify-content: center;
+        }
+    }
+    .portfolio {
+        .container {
+            .portfolio__wrapper {
+                grid-template: repeat(2,280px)/repeat(3,280px);
+                justify-content: center;
+                .portfolio__item_horizontal, .portfolio__item_vertical {
+                    grid-row: unset;
+                    grid-column: unset;
+                }
+            }
+        }
+    }
+    .contacts {
+        .container {
+            padding: 0;
+            grid-template-columns: 300px 585px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;   
+    }
+    .about {
+        padding-top: 40px;
+        .about__title {
+            font-size: 30px;
+        }
+        .container {
+            row-gap: 30px;
+            column-gap: 30px;
+            grid-template-columns: 300px 400px;
+            .about__skills {
+                grid-template: repeat(3,1fr)/auto;
+                row-gap: 30px
+            }
+        }
+    }
+    .exp {
+        padding-top: 40px;
+        .title_section-title {
+            margin-top: 26px;
+            font-size: 28px;
+            line-height: 30px;
+        }
+        .exp__wrapper {
+            margin-top: 0px;
+            column-gap: 20px;
+            .exp__column {
+                margin-top: 40px;
+                .exp__item {
+                    width: unset;
+                }
+            }
+        }
+    }
+    .skills {
+        padding-top: 40px;
+        .title_section-title {
+            margin-top: 26px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .title_section-title::after {
+            margin-top: 15px;
+        }
+        .skills__wrapper {
+            grid-template: auto/270px;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .skills__progress {
+            grid-template: repeat(3,70px)/100%;
+            justify-items: center;
+            margin-top: 40px;
+        }
+    }
+    .portfolio {
+        .container {
+            .portfolio__wrapper {
+                grid-template: repeat(3,280px)/repeat(2,280px);
+                justify-content: center;
+            }
+        }
+    }
+    .price {
+        .container {
+            ul {
+                justify-content: unset;
+                grid-template: auto/100%;
+            }
+        }
+    }
+    .contacts {
+        .container {
+            grid-template:  unset;
+            justify-content: center;
+            .contacts__photo {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .promo {
+        .promo__title {
+            width: 335px;
+            font-size: 30px;
+            line-height: 50px;
+        }
+    }
+    .about {
+        .container {
+            grid-template: 340px auto auto/100%;
+            .about__img {
+                grid-row: 1/2;
+            }
+            .about__skills {
+                row-gap: 40px;
+            }
+        }
+    }
+    .exp {
+        .exp__wrapper {
+            grid-template:auto/100%;
+            .exp__column {
+                .exp__name {
+                    margin-bottom: 35px;
+                }
+                .exp__item {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .portfolio {
+        padding-top: 47px;
+        .container {
+            .title_section-title {
+                font-size: 24px;
+                line-height: 36px;
+                margin-top: 26px;
+            }
+            .title_section-title::after {
+                margin-top: 15px;
+            }
+            .portfolio__wrapper {
+                margin-top: 40px;
+                grid-template: auto/280px;
+                justify-content: center;
+                row-gap: 20px;
+                .portfolio__item {
+                    .portfolio__img {
+                        filter: brightness(100%);
+                    }
+                }
+            }
+
+        }
+    }
+    .price {
+        padding-top: 40px;
+        .container {
+            .title_section-subtitle::after {
+                margin-top: 21px;
+            }
+            ul {
+                margin-top: 20px;
+                row-gap: 20px;
+                justify-content: unset;
+                grid-template: auto/100%;
+            }
+        }
+    }
+    .contacts {
+        padding: 40px 0 50px 0;
+        .container {
+            .title_section-title {
+                font-size: 24px;
+            }
+            .contacts__main {
+                
+                .contacts__form {
+                    grid-template: 45px 45px 145px/100%;
+                    .contacts__textarea {
+                        grid-column: unset;
+                    }
+                    .contacts__wrapper {
+                        grid-column: unset;
+                        grid-template: auto/100%;
+                        row-gap: 20px;
+                        .btn {
+                            width: 220px;
+                            margin: 0 auto;
+                        }
+                        .contacts__privacy {
+                            grid-row: 1/2;
+                            margin: 0 auto;
+                            line-height: 18px;
+                            width: 180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .menu {
+        .menu__block {
+            width: 260px;
+            padding-left: 55px;
+        }
+    }
+    .promo {
+        background-image: none;
+        background-color: #d3effd;
+        .hamburger {
+            right: 20px;
+        }
+        .promo__title {
+            width: 300px;
+            line-height: 39px;
+        }
+        .promo__btns {
+            margin-top: 32px;
+        }
+    }
+    .about {
+        .container {
+            row-gap: 20px;
+            .about__title {
+                font-size: 24px;
+            }
+            .about__skills {
+                row-gap: 20px;
+            }
+        }
+    }
+    .skills {
+        .title_section-title {
+            width: 210px;
+            margin: 0 auto;
+            margin-top: 26px;
+        }
+        .skills__progress {
+            row-gap: 40px;
+            .skills__bar {
+                width: 300px;
+                .skills__line {
+                    width: 300px;
+                }
+                .skills__percent {
+                    left: 264px;
+                }
+            }
+        }
+    }
+    .price {
+        .container {
+            ul {
+                padding: 0;
+            }
+        }
+    }
+    .contacts {
+        .container {
+            padding: 0 10px;
+        }
+    }
+}
